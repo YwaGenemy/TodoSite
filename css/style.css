@@ -1,0 +1,145 @@
+body{
+    padding-top: 200px;
+    font-family: 'JetBrains Mono' , monospace;
+    background-color: #1f1f1f;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+header{
+    background-color: rgba(52, 52, 52, 0.5);
+    backdrop-filter: blur(3px);
+
+    top: 0;
+
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+
+    margin-top: 100px;
+
+
+
+    width : 800px;
+    height: 80px;
+
+    border-radius: 20px;
+}
+
+.box-plus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+
+    color: #0ac6de;
+
+    padding: 20px;
+
+    transition: color 200ms ease;
+
+    cursor:pointer;
+}
+
+.box-plus:hover{
+    color: #0da2b7;
+    transition: color 200ms ease;
+}
+
+.box-plus:active{
+    color: #0c7d8f;
+    font-size: 47px;
+}
+
+
+
+input{
+    position: fixed;
+    background-color: rgba(52, 52, 52, 0.5);
+
+    height: 50px;
+    width: 680px;
+
+    outline: none;
+
+    margin-left: 100px;
+
+    border-radius: 10px;
+    border: none;
+
+    resize: none;
+    overflow: hidden;
+
+    transition: box-shadow 250ms ease;
+}
+
+input:focus{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+input[placeholder]{
+    font-family: 'JetBrains Mono' , monospace;
+
+    font-size: 30px;
+
+    color:white;
+}
+
+.item{
+    font-size: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #b4b4b4;
+
+    background-color: #2a2a2a;
+
+    border-radius: 20px;
+
+    height: 70px;
+    width: 700px;
+
+    margin-bottom: 10px;
+
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+}
+
+.item:hover{
+    background-color: #3a3939;
+}
+
+.item:active{
+    background-color: #1a1a1a;
+}
+
+.item.new{
+    opacity: 0;
+    transform: translateY(-100px); /* чуть выше */
+}
+
+.string {
+    display: flex;
+    justify-content: space-between; /* текст слева, корзина справа */
+    align-items: center;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 5px 0;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
